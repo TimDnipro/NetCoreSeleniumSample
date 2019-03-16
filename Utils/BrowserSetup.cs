@@ -9,7 +9,7 @@ namespace dotnet_mstest
     class BrowserSetup
     {
         private static Dictionary<string, Func<IWebDriver>> Browsers = new Dictionary<string, Func<IWebDriver>>(){
-            {"Chrome", () => new ChromeDriver("drivers/")},
+            {"Chrome", () => new ChromeDriver()},
             {"Firefox", () => new FirefoxDriver()}
         };
 
