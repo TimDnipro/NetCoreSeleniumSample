@@ -25,27 +25,30 @@ What will happen when mobile phone restarting interrupts your app running?
 How does your application respond to a low battery pop-up notification when it is running?
 
 9. Low memory
-How your application responds to a low memory pop-up notification?
+How your application responds to a low memory pop-up notification? Displaying error messages and exits gracefully at times of low memory issues
 
-10. Screen rotation
+10. Network connection
+App Performance at the time of a Network problem and error alert prompts. Application performance when the Network is back in action
+
+11. Screen rotation
 Does your app react to changes in the device’s orientation from vertical to horizontal, and vice versa, with its corresponding portrait or landscape page orientation?
 
-11. Location
+12. Location
 Is the location identified correctly if your app integrates with any location based services? Is it working properly on both data and wireless networks?
 
-12. Pictures
+13. Pictures
 Are your images, photos or icons stretched, pixelated or deformed in any other way? Are they uploading well?
 
-13. Social media
+14. Social media
 Are the privacy policy and notifications set properly, if your app integrates with social networks and allows users to use their accounts to login?
 
-14. Performance
+15. Performance
 What is the minimum configuration needed for the app to run appropriately? Does your app hamper other apps?
 
-15. Security
+16. Security
 Does your app have any vulnerabilities in the form of malvertising or any other cyberthreats? Is it secured against them?
 
-16. Usability
+17. Usability
 - Responsiveness of the App Logo and Name when clicking the Application Manager
 - Receiving visual feedback for user actions in the application within 3 seconds max.
 - Functionality of the exit options at any point of running the application
@@ -60,7 +63,8 @@ Does your app have any vulnerabilities in the form of malvertising or any other 
 - Distinguishing the inactive buttons from active buttons
 - Font options, zoom-in and out and legibility of app display
 
-17. How App performs in the background
+18. How App performs in the background
 - Resuming App from the same point as left at the time of switching to another app
 - Sending/Receiving messages and alerts while the app is running
 - Sending/Receiving Push Notifications and responding to them
+ 
