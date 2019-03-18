@@ -12,7 +12,7 @@ Does your app work correctly on computer network and on wireless networks?
 What will happen to the app when there is no Internet connection or when airplane mode is turned on?
 
 5. Call interruption
-What will happen when a phone call interrupts your app installing or running?
+What will happen when a phone call interrupts your app installing or running? Rejecting calls while viewing the application.
 
 6. SMS interruption
 
@@ -45,7 +45,7 @@ What is the minimum configuration needed for the app to run appropriately? Does 
 15. Security
 Does your app have any vulnerabilities in the form of malvertising or any other cyberthreats? Is it secured against them?
 
-16. Usability tests to ensure customers’ comfort in your app
+16. Usability
 - Responsiveness of the App Logo and Name when clicking the Application Manager
 - Receiving visual feedback for user actions in the application within 3 seconds max.
 - Functionality of the exit options at any point of running the application
@@ -59,3 +59,8 @@ Does your app have any vulnerabilities in the form of malvertising or any other 
 - Prompt display of errors and warning messages
 - Distinguishing the inactive buttons from active buttons
 - Font options, zoom-in and out and legibility of app display
+
+17. How App performs in the background
+- Resuming App from the same point as left at the time of switching to another app
+- Sending/Receiving messages and alerts while the app is running
+- Sending/Receiving Push Notifications and responding to them
