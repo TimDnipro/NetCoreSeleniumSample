@@ -84,3 +84,6 @@ Does the app behave as designed/desired if the device resumes from lock screen?
 23 Does the app behave as designed/desired if the device is shaken?
 
 24 Check for common mobile gestures support
+
+25 Localization
+Switch to different language, timezone, change date
