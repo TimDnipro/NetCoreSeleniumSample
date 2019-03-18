@@ -44,3 +44,18 @@ What is the minimum configuration needed for the app to run appropriately? Does 
 
 15. Security
 Does your app have any vulnerabilities in the form of malvertising or any other cyberthreats? Is it secured against them?
+
+16. Usability tests to ensure customers’ comfort in your app
+- Responsiveness of the App Logo and Name when clicking the Application Manager
+- Receiving visual feedback for user actions in the application within 3 seconds max.
+- Functionality of the exit options at any point of running the application
+- Keep away unmapped keys in your Application
+- Enabling responsive Mobile menu for Tablets and Mobiles
+- Easy Navigation across different screens
+- Interface changes with change in screen orientation
+- Clarity and Readability of application buttons
+- Responsiveness of drop down lists
+- Minimizing user actions by enabling them directly pick their choice from the screen
+- Prompt display of errors and warning messages
+- Distinguishing the inactive buttons from active buttons
+- Font options, zoom-in and out and legibility of app display
