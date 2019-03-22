@@ -14,4 +14,4 @@ http://40.115.60.201:8080/
 
 ## Bug Tracker ##
 All issues are tracked in Jira:
-http://jira-appgtwyip-funfbi2sy7ivo.westeurope.cloudapp.azure.com/secure/Dashboard.jspa 
+http://jira-appgtwyip-xc4cc6b7be4i4.westeurope.cloudapp.azure.com
