@@ -1,23 +1,23 @@
 using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 namespace dotnet_mstest
 {
-    [TestClass]
+    [TestFixture]
     public class GoogleTest : TestBase
     {
 
         GooglePage Google { get; set; }
 
-        [TestInitialize]
+        [OneTimeSetUp]
         public void SetUpGoogle()
         {
             Google = GooglePage.At(Driver);
         }
 
-        [TestMethod]        
+        [Test]        
         public void ShouldLoadGooglePage()
         {
             Assert.AreEqual("Google", Driver.Title);

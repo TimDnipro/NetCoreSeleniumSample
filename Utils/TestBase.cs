@@ -1,5 +1,5 @@
 using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
@@ -9,10 +9,10 @@ namespace dotnet_mstest
     {
         protected IWebDriver Driver { get; private set; }
 
-        [TestInitialize]
+        [OneTimeSetUp]
         public void SetUp() => OpenBrowser();
 
-        [TestCleanup]
+        [OneTimeTearDown]
         public void TearDown()
         {
             if (Driver != null) Driver.Quit();
