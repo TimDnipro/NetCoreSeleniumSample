@@ -2,9 +2,8 @@ using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace dotnet_mstest
+namespace DosvitTests
 {
-
     abstract class Page
     {
         protected IWebDriver Driver { get; private set; }
@@ -16,7 +15,8 @@ namespace dotnet_mstest
             Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
         }
 
-        abstract protected T VerifyOnPage<T>() where T : Page;
+        protected abstract T VerifyOnPage<T>() where T : Page;
+
         protected T GetPageObject<T>() => (T)Convert.ChangeType(this, typeof(T));
 
         public IWebElement WaitForElement(IWebElement element)

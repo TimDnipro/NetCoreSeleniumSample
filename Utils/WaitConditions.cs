@@ -1,7 +1,7 @@
 using System;
 using OpenQA.Selenium;
 
-namespace dotnet_mstest
+namespace DosvitTests
 {
 
     class WaitConditions

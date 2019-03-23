@@ -4,13 +4,13 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 
-namespace dotnet_mstest
+namespace DosvitTests
 {
     class BrowserSetup
     {
         private static Dictionary<string, Func<IWebDriver>> Browsers = new Dictionary<string, Func<IWebDriver>>(){
-            {"Chrome", () => new ChromeDriver("drivers/")},
-            {"Firefox", () => new FirefoxDriver()}
+            {"Chrome", () => new ChromeDriver(Environment.CurrentDirectory)},
+            {"Firefox", () => new FirefoxDriver(Environment.CurrentDirectory)}
         };
 
         public static IWebDriver GetDriver(string browserType) =>
