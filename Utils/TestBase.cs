@@ -34,7 +34,7 @@ namespace DosvitTests
         protected void OpenBrowser()
         {
             Driver = BrowserSetup.GetDriver(_browserType.ToString());
-            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace DosvitTests
         public TextBox UserName => new TextBox(Driver.FindElement(By.CssSelector("input#login")));
         public TextBox PassWord => new TextBox(Driver.FindElement(By.CssSelector("input#password")));
         public Button LoginButton => new Button(Driver.FindElement(By.CssSelector("button[type='submit']")));
-        public string Message => Driver.FindElement(By.CssSelector("p[class*='TextWrap']")).Text;
+        public string Message => Driver.FindElement(By.CssSelector("p[class*='-TextWrap']")).Text;
 
         public void Login(string userName, string passWord)
         {
