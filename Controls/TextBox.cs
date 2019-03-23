@@ -11,6 +11,6 @@ namespace DosvitTests.Controls
 
         public string Text { get => Container.Text; set => Container.SendKeys(value); }
 
-        public bool IsNotValid => Container.GetAttribute("aria-invalid").Equals("true");
+        public bool IsValid => Container.GetAttribute("aria-invalid").Equals("false");
     }
 }

@@ -11,5 +11,7 @@ namespace DosvitTests.Controls
         {
             Container = container;
         }
+
+        public bool IsVisible => Container.Displayed;
     }
 }

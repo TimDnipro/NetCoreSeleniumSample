@@ -1,16 +1,29 @@
 using System;
+using DosvitTests.Utils;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace DosvitTests
 {
+    [Explicit]
+    [TestFixture(BrowserType.Chrome)]
+    [TestFixture(BrowserType.Firefox)]
     public class TestBase
     {
+        private readonly BrowserType _browserType;
+
+        public TestBase(BrowserType browserType)
+        {
+            _browserType = browserType;
+        }
+
         protected IWebDriver Driver { get; private set; }
 
         [OneTimeSetUp]
-        public void SetUp() => OpenBrowser();
+        public void SetUp()
+        {
+            OpenBrowser();
+        }
 
         [OneTimeTearDown]
         public void TearDown()
@@ -20,9 +33,8 @@ namespace DosvitTests
 
         protected void OpenBrowser()
         {
-            Driver = BrowserSetup.GetDriver("Chrome");
+            Driver = BrowserSetup.GetDriver(_browserType.ToString());
             Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         }
-
     }
 }
