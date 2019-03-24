@@ -1,3 +1,4 @@
+using System.Linq;
 using DosvitTests.Controls;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -34,7 +35,7 @@ namespace DosvitTests
             LoginButton.Click();
         }
 
-        public bool IsLoggedIn => Driver.FindElements(By.CssSelector("input#login")).Count == 0;
+        public bool IsLoggedIn => !Driver.FindElements(By.CssSelector("input#login")).Any();
 
     }
 }
